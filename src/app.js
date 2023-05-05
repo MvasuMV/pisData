@@ -29,6 +29,9 @@ app.post("/infos", async(req,res)=>{
         res.status(400).send(e);
     }
 })
+app.get('/',async(req,res)=>{
+    res.send("WELCOME");
+})
 
 app.get("/info",async(req, res)=>{
     try{
